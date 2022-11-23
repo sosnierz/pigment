@@ -1,0 +1,104 @@
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'colors';
+
+@font-face{
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf')
+}
+@font-face{
+    font-family: 'Garamond';
+    src: url('../fonts/Garamond.ttf')
+}
+@font-face{
+    font-family: 'Garamond-bold';
+    src: url('../fonts/Garamond-Bold.ttf')
+}
+body{
+    font-family: 'Lato';
+    background: $col-grey;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 100vh;
+    .preloader{
+        display: none;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        font-family: 'Lato';
+        margin-bottom: 6px;
+    }
+    a{
+        text-decoration: none;
+        color: $col-white;
+    }
+    p{
+        font-family: 'Lato';
+    }
+    h2{
+        font-family: 'Lato';
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #555;
+        text-align: center;
+        @media(max-width:991px){
+            font-size: 36px;
+          }
+        @media(max-width:820px){
+            font-size: 33px;
+          }
+        @media(max-width:578px){
+            font-size: 25px;
+          }
+    }
+    h4{
+        font-family: 'Lato';
+    }
+    section{
+        max-width: 100%;
+        overflow: hidden;
+        background: $col-bg;
+    .container{
+        max-width: 85%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    }
+    button{
+        margin-top: 15px;
+        max-width: 200px;
+        padding: 20px 40px;
+        border: none;
+        background: $col-bg-menu;
+        margin: 0 auto;
+        a{
+            text-decoration: none;
+            color:$col-text;
+            text-transform: uppercase;
+        }
+    }
+    div{
+        &.wpcf7{
+          .ajax-loader {
+            background-image: url('../img/preloader.gif');
+            width: 0;
+            height: 0;
+            margin-left: 0;
+            background-size: contain;
+            &.is-active{
+              margin-left: 10px;
+              margin-bottom: 20px;
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+}

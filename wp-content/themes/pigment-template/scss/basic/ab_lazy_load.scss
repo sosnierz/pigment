@@ -1,0 +1,28 @@
+//lazy load
+img{
+  &:not(.initial) {
+			transition: opacity 1s;
+	}
+  &[data-src]{
+    display: block;
+    min-height: 1px;
+    opacity: 0;
+  }
+  &[data-srcset] {
+    display: block;
+    min-height: 1px;
+    opacity: 0;
+  }
+  &.initial{
+		opacity: 1;
+	}
+	&.loaded{
+		opacity: 1;
+	}
+	&.error {
+		opacity: 1;
+	}
+	&:not([src]) {
+		visibility: hidden;
+	}
+}

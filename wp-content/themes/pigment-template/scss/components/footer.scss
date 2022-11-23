@@ -1,0 +1,89 @@
+#footer {
+  background: $col-grey;
+  width: 100%;
+  padding: 40px 0;
+  .footer{
+    max-width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    @media(max-width:850px){
+      flex-direction: column;
+  }
+    @media(max-width:576px){
+      max-width: 100%;
+  }
+    &__left{
+      &__logo{
+        width: 250px;
+        height: 120px;
+        img{
+          height: 80%;
+          width: auto;
+          @media(max-width:850px){
+           display: block;
+           margin: 0 auto;
+        }
+        }
+      }
+    }
+   &__middle{
+    margin: 10px 50px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media(max-width:850px){
+      margin: 20px 0;
+  }
+    .address{
+      display: flex;
+      align-items: center;
+      margin-right: 40px;
+      img.icon{
+        width: auto;
+        height: 36px;
+      }
+      .txt{
+        padding: 0 10px;
+      p{
+        margin: 6px 0;
+        color: $col-text;
+        font-size: 16px;
+      }
+    }
+    }
+    .socials{
+     
+      p{
+        margin: 6px 0;
+        color: $col-text;
+        font-size: 16px;
+
+      }
+        .social-icons{
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          a{
+            transition: all .6s linear;
+            .icon {
+              width: 30px;
+              height: auto;
+            }
+            .insta{
+              height: 31px;
+              width: 31px;
+            }
+            &:hover{
+              transform:  scale(1.2);
+            }
+        }
+      }
+    }
+    }
+   
+    
+  }
+}

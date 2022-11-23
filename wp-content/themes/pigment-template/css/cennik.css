@@ -1,0 +1,1 @@
+section.cannik{display:grid;grid-template-columns:repeat(3,33%);grid-template-rows:15% auto 15%}section.cannik .banner{grid-column:1/4;grid-row:1/4}section.cannik .banner__mobile{display:none}

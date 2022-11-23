@@ -1,0 +1,1 @@
+function viewFAQ(){let e=document.getElementsByClassName("question");Array.from(e).forEach(e=>{e.style.setProperty("--sh",e.scrollHeight+50+"px"),e.addEventListener("click",()=>{e.classList.toggle("is-active"),console.log(e.scrollHeight)})}),window.onresize(()=>{Array.from(e).forEach(e=>{e.style.setProperty("--sh",e.scrollHeight+"px")})})}docReady(viewFAQ);
